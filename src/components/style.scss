@@ -1,0 +1,115 @@
+.infoBox--selected {
+    border-top: 10px solid greenyellow;
+
+    &.infoBox--red {
+        border-color: #ff0000;
+    }
+}
+
+.infoBox__cases {
+    color: #cc1034;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+
+    &.infoBox__cases--green {
+        color: #5cb85c;
+    }
+}
+
+.infoBox {
+    flex: 1;
+    transform: scale(0.95);
+
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        // transition: all 2s;
+    }
+
+    .work-box:hover img {}
+
+    .infoBox__total {
+        color: #6c757d;
+        font-weight: 700 !important;
+        font-size: 0.8rem !important;
+        margin-top: 15px !important;
+    }
+}
+
+//   Map
+.map {
+    height: 500px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 16px;
+    box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+
+    .leaflet-container {
+        height: 100%;
+        border-radius: 12px;
+    }
+
+    .info-flag img {
+        width: 100px;
+        border-radius: 5px;
+    }
+
+    .info-name {
+        font-size: 20px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    .info-container {
+        width: 150px;
+    }
+
+    .info-flag {
+        height: 80px;
+        width: 100%;
+        background-size: cover;
+        border-radius: 8px;
+    }
+
+    .info-confirmed,
+    .info-recovered,
+    .info-deaths {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+}
+
+// Table
+
+.table {
+    margin-top: 20px;
+    overflow: scroll;
+    color: #6a5d5d;
+    background-color: white;
+    height: 400px;
+
+
+    tr {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    td {
+        padding: 0.5rem;
+        border: none;
+    }
+
+    tr:nth-of-type(odd) {
+        background-color: #f3f2f8;
+
+    }
+}
